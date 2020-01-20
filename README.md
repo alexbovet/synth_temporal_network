@@ -1,7 +1,10 @@
-Individual agent class.
-    
-Parameters:
------------
+# Simulation of temporal networks.
+
+Alexandre Bovet, 2019
+
+This program consists of two main Classes : *Individual*, the class of individual agents (i.e. nodes of the network), and *SynthTempNetwork*, the class used for running the simulations and generating a continuous time synthetic temporal network.
+
+## *Individual* class parameters:
 
 ID: int
     ID of the individual
@@ -39,14 +42,8 @@ activ_distro_mod_func: function
 group: int
     ID of the group to which the individual belongs to.
     
-    
-    
-SynthTempNetwork: a class for an agent based model generating a continuous time synthetic temporal network
-        
-Alexandre Bovet 2019
 
-Parameters:
------------
+## *SynthTempNetwork* class parameters:
 
 individuals: list
     List of Individual instances, i.e. the nodes of the network.
