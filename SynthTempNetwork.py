@@ -203,7 +203,7 @@ class SynthTempNetwork(object):
             Number of interactions generated each time an individual is
             activated
             
-        next_event_method: float
+        next_event_method: string
             Method to choose the individual to interact with.
             Can be
             
