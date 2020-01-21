@@ -2,7 +2,10 @@
 
 Alexandre Bovet, 2019
 
-This program consists of two main Classes : **Individual**, the class of individual agents (i.e. nodes of the network), and **SynthTempNetwork**, the class used for running the simulations and generating a continuous time synthetic temporal network.
+This program consists of two main Classes : **Individual**, the class of individual agents (i.e. nodes of the network), and **SynthTempNetwork**, the class used for running the simulations and generating a continuous time synthetic temporal network where an event `(v_1,v_2,t_s,t_e)` represents an interaction between nodes (agents) v_1 and v_2 that started at t_s and ended at t_e.
+
+The nodes are activated at different times drawn from a prescribe distribution that can be time-dependent and can be different for each node. When a node is activated it starts a new event with a given number of other nodes drawn according to probabilities given by a block model that can also be time-dependent. The duration of the events are also drawn from distributions that can be time-dependent and different for each node.
+
 
 ## **Individual** class parameters:
 
